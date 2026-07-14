@@ -1,0 +1,13 @@
+# Last updated: 14/07/2026, 14:13:37
+class Solution(object):
+    def triangleType(self, nums):
+        nums.sort()
+        if nums[0] + nums[1] <= nums[2]:
+            return "none"
+
+        if nums[0] == nums[1] == nums[2]:
+            return "equilateral"
+        elif nums[0] == nums[1] or nums[1] == nums[2]:
+            return "isosceles"
+        else:
+            return "scalene"
