@@ -1,0 +1,11 @@
+# Last updated: 14/07/2026, 14:13:45
+class Solution(object):
+    def numberOfEmployeesWhoMetTarget(self, hours, target):
+        count=0
+        for i in range(len(hours)):
+            if hours[i]>=target:
+                count=count+1
+
+        return count
+
+        
